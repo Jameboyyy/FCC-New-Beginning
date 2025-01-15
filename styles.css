@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Landscape and NAV */
+
+#landscape {
+    display: flex;
+    height: 100vh;
+}
+
+.nav__container {
+    display: flex;
+}
+
+.nav__list {
+    display: flex;
+    gap: 20px;
+}
+
+.nav__lists {
+
+}
+
+.nav__link {
+    text-decoration: none;
+    color: black;
+}
+
+.landscape__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
