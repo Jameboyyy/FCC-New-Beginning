@@ -149,6 +149,7 @@ h4 {
 .landscape__btn:hover {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
     transform: scale(1.07);
+    transition: all 0.3s ease;
 }
 
 /* About Section */
