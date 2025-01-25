@@ -9,8 +9,23 @@ ul {
     list-style-type: none;
 }
 
-h1 {
+h2 {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+}
 
+h4 {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.about__title::after,
+.community__heading--title::after {
+    width: 600px;
 }
 
 /* Landscape and NAV */
@@ -154,10 +169,6 @@ h1 {
 
 .about__title {
     position: relative;
-    font-family: "Poppins", serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 24px;
 }
 
 .about__title::after {
@@ -166,29 +177,282 @@ h1 {
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
-    width: 60%;
     height: 2px;
     background-color: #228B22;
-}
-
-.about__info, .about__sub--title {
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
 }
 
 /* Community Section*/
 
 #community {
-    min-height: 50vh;
-    background-color: #a6a6a6;
+    background-color: #264653;
 }
 
 .community__container {
-    max-width: 1000px;
+    position: relative;
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
+    justify-content: center;
+    min-height: 50vh;
 }
+
+.community__heading--container {
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+    gap: 20px;
+}
+
+.community__heading--title {
+    position: relative;
+    color: #f2f2f2;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.community__heading--title::after {
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    background-color: #8B4513;
+}
+
+.community__heading--sub {
+    color: #f2f2f2;
+    max-width: 800px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: #f2f2f2;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: background-color 0.2s ease;
+}
+
+.carousel__button--left {
+    left: 25px; /* Position to the left of the carousel */
+}
+
+.carousel__button--right {
+    right: 25px; /* Position to the left of the carousel */
+}
+
+.community__card--container {
+    margin-top: 2%;
+    display: flex;
+    gap: 30px;
+    transition: transform 0.3s ease-in-out;
+    will-change: transform;
+}
+
+.community__card {
+    flex: 0 0 calc(33% - 20px);
+    max-width: calc(33% - 20px);
+    background-color: #264653;
+    border-radius: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    margin-bottom: 5%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.community__card:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+}
+
+.community__card:hover .community__card--img {
+    transition: all 0.3s ease;
+}
+
+.community__card--img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    border-radius: 25px;
+}
+
+.community__card--title {
+    color: #f2f2f2;
+}
+
+
+.community__card--sub {
+    color: #f2f2f2;  
+    border-radius: 5px;
+}
+
+
+/* Connect Section */
+
+#connect {
+    background-color: #E0E0E0  ;
+    height: 75vh;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.connect__heading--title {
+    position: relative;
+    color: #264653;
+}
+
+/* Form Container */
+.connect__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between fields */
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+.form__label {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: #264653;
+    font-weight: 500;
+    text-align: left;
+}
+
+/* Input Fields */
+.form__input,
+.form__textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Input Focus Effect */
+.form__input:focus,
+.form__textarea:focus {
+    outline: none;
+    border-color: #8B4513; /* Highlight color on focus */
+    box-shadow: 0 0 5px rgba(139, 69, 19, 0.5); /* Optional shadow effect */
+}
+
+.form__textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Submit Button */
+.form__button {
+    padding: 12px 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #264653;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form__button:hover {
+    background-color: #2a6476; /* Slightly lighter hover effect */
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Footer */
+
+footer {
+    height: 25vh;
+    background-color: #E0E0E0 ;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Top Row: Contact Info */
+.footer__contact {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spacing between items */
+    margin-bottom: 20px; /* Space between rows */
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.footer__item a {
+    color: #2a6476;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer__item a:hover {
+    color: #8B4513; /* Highlight on hover */
+}
+
+/* Bottom Row: Links and Copyright */
+.footer__links {
+    border-top: 1px solid #2a6476; /* Subtle divider */
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px;
+}
+
+.footer__link {
+    color: #2a6476;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+    color: #8B4513; /* Highlight on hover */
+}
+
+/* Copyright Section */
+.footer__copyright {
+    font-size: 14px;
+    margin-top: 10px;
+}
+

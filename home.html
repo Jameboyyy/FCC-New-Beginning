@@ -51,9 +51,9 @@
     </section>
     <section id="about">
         <div class="about__container">
-            <h1 class="about__title">
+            <h2 class="about__title">
                 Family Christian Church
-            </h1>
+            </h2>
             <h4 class="about__info">
                 Our mission is to glorify God by winning souls, making disciples, and sharing His love with our community. Together, we seek to build a Christ-centered family where faith grows and lives are transformed.
             </h4>
@@ -66,19 +66,123 @@
     </section>
     <section id="community">
         <div class="community__container">
+            <!-- Heading Section -->
             <div class="community__heading--container">
-                <h1 class="community__heading--title">
-                    
-                </h1>
+                <h2 class="community__heading--title">
+                    Find Your Purpose
+                </h2>
+                <h4 class="community__heading--sub">
+                    Discover your path to growth and connection through our cell groups, where community and faith come together. Embrace discipleship and mentoring opportunities for all ages as we journey together in Christ.
+                </h4>
+            </div>
+    
+            <!-- Carousel Section -->
+            <div class="carousel">
+                <button class="carousel__button carousel__button--left">&lt;</button>
+                <div class="community__card--container">
+                    <!-- Card 1 -->
+                    <div class="community__card">
+                        <img src="./assets/adults.jpg" alt="Group of adults" class="community__card--img">
+                        <h2 class="community__card--title">Adults</h2>
+                        <h4 class="community__card--sub">
+                            Join a group of like-minded adults focused on faith and growth in Christ.
+                        </h4>
+                    </div>
+    
+                    <!-- Card 2 -->
+                    <div class="community__card">
+                        <img src="./assets/youth.jpg" alt="Youth group activity" class="community__card--img">
+                        <h2 class="community__card--title">Youth</h2>
+                        <h4 class="community__card--sub">
+                            Empowering the next generation to grow in faith, build friendships, and discover their purpose in Christ.
+                        </h4>
+                    </div>
+    
+                    <!-- Card 3 -->
+                    <div class="community__card">
+                        <img src="./assets/kids.jpg" alt="Children's activity" class="community__card--img">
+                        <h2 class="community__card--title">Kids</h2>
+                        <h4 class="community__card--sub">
+                            Creating a joyful and safe space where children can learn about Jesus through fun and meaningful activities.
+                        </h4>
+                    </div>
+    
+                    <!-- Card 4 -->
+                    <div class="community__card">
+                        <img src="./assets/fellowship.jpg" alt="Fellowship event" class="community__card--img">
+                        <h2 class="community__card--title">Fellowship</h2>
+                        <h4 class="community__card--sub">
+                            Building lasting relationships and deepening our connection with Christ through community and shared experiences.
+                        </h4>
+                    </div>
+    
+                    <!-- Card 5 -->
+                    <div class="community__card">
+                        <img src="./assets/prayermeeting.jpg" alt="Prayer meeting" class="community__card--img">
+                        <h2 class="community__card--title">Prayer Meeting</h2>
+                        <h4 class="community__card--sub">
+                            Uniting hearts in prayer, seeking God’s presence, and interceding for one another.
+                        </h4>
+                    </div>
+    
+                    <!-- Card 6 -->
+                    <div class="community__card">
+                        <img src="./assets/1mile.jpg" alt="Mentorship activity" class="community__card--img">
+                        <h2 class="community__card--title">Mentoring</h2>
+                        <h4 class="community__card--sub">
+                            Guiding individuals of all ages toward spiritual growth, personal development, and a closer walk with God.
+                        </h4>
+                    </div>
+                </div>
+                <button class="carousel__button carousel__button--right">&gt;</button>
             </div>
         </div>
     </section>
-    <section id="events">
 
-    </section>
     <section id="connect">
-
+        <h2 class="connect__heading--title">
+            Connect With Us Today
+        </h2>
+        <form action="your-action-url-here" method="POST" class="connect__form">
+            <!-- Name Field -->
+            <label for="name" class="form__label">Name</label>
+            <input type="text" id="name" name="name" class="form__input" placeholder="Enter your name" required>
+        
+            <!-- Email Field -->
+            <label for="email" class="form__label">Email</label>
+            <input type="email" id="email" name="email" class="form__input" placeholder="Enter your email" required>
+        
+            <!-- Message Field -->
+            <label for="message" class="form__label">Message</label>
+            <textarea id="message" name="message" class="form__textarea" placeholder="Write your message here..." rows="5" required></textarea>
+        
+            <!-- Submit Button -->
+            <button type="submit" class="form__button">Send Message</button>
+        </form>
+        </div>
     </section>
+    <footer class="footer__container">
+        <!-- Top Row: Contact Info -->
+        <div class="footer__contact">
+            <p class="footer__item">Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p class="footer__item">Email: <a href="mailto:info@yourbrand.com">info@example.com</a></p>
+            <p class="footer__item">
+                <a href="https://facebook.com/yourbrand" target="_blank">Facebook</a>
+            </p>
+        </div>
+    
+        <!-- Bottom Row: Links and Copyright -->
+        <div class="footer__links">
+            <ul class="footer__nav">
+                <li><a href="#about" class="footer__link">About Us</a></li>
+                <li><a href="#events" class="footer__link">Events</a></li>
+                <li><a href="#community" class="footer__link">Community</a></li>
+                <li><a href="#contact" class="footer__link">Contact</a></li>
+            </ul>
+            <p class="footer__copyright">&copy; 2025 Your Brand. All rights reserved.</p>
+        </div>
+    </footer>
+    
     <script src="app.js"></script>
 </body>
 </html>
